@@ -148,9 +148,6 @@
 /******/ 					"__widl_f_document_Window": function(p0i32) {
 /******/ 						return installedModules["./pkg/linmath_demo.js"].exports["__widl_f_document_Window"](p0i32);
 /******/ 					},
-/******/ 					"__widl_f_log_1_": function(p0i32) {
-/******/ 						return installedModules["./pkg/linmath_demo.js"].exports["__widl_f_log_1_"](p0i32);
-/******/ 					},
 /******/ 					"__wbg_newnoargs_9fab447a311888a5": function(p0i32,p1i32) {
 /******/ 						return installedModules["./pkg/linmath_demo.js"].exports["__wbg_newnoargs_9fab447a311888a5"](p0i32,p1i32);
 /******/ 					},
@@ -288,7 +285,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"./pkg/linmath_demo_bg.wasm":"b907638dcccaeedf4963"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"./pkg/linmath_demo_bg.wasm":"da6d9f71dd58a76034e2"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
